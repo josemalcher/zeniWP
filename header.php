@@ -103,7 +103,7 @@
 
             <div class="wrapper clearfix">
 
-                <a href="index.html" id="logo"><img  src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Zeni"></a>
+                <a href="<?php echo home_url(); ?>" id="logo"><img  src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Zeni"></a>
 
                 <nav>
                     <ul id="nav" class="sf-menu">
