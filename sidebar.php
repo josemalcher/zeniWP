@@ -4,6 +4,10 @@
 
     <ul>
         <li class="block">
+            <?php get_search_form(); ?>
+        </li>
+        
+        <li class="block">
             <h4>CATEGORIAS</h4>
             <ul>
                 <?php wp_list_categories(
