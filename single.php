@@ -9,10 +9,9 @@
         <!-- posts list -->
         <div id="posts-list" class="single-post">
 
-            <?php if (have_posts()) : the_post(); ?>
-                <h2 class="page-heading"><span><?php the_title(); ?></span></h2>	
-                        <?php get_template_part('partials/content', 'default'); ?>
-                    <?php endif; ?>
+
+            <?php get_template_part('partials/loop', 'pages'); ?>
+
 
 
         </div>

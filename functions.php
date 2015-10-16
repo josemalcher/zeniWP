@@ -1,5 +1,15 @@
 <?php
 
+add_action('init', 'zeniwp_init');
+
+function zeniwp_init(){
+    zeniwp_register_menus();
+}
+
+function zeniwp_register_menus(){
+    register_nav_menu('menu-primario','Menu Principal (Topo)');
+}
+
 //Carrega os arquivos Css e JS
 add_action('wp_enqueue_scripts', 'zeniwp_enqueue_scripts');
 function zeniwp_enqueue_scripts() {
@@ -39,3 +49,4 @@ function custom_excerpt_length() {
 	return 50;
 }
 
+add_theme_support('menus');

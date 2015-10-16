@@ -4,13 +4,13 @@
     <head>
         <meta charset="utf-8"/>
         <title>
-            <?php 
-                bloginfo('name');
-                if(is_home()){
-                    echo '-' . get_bloginfo('description');
-                }else{
-                    wp_title('|', true);
-                }
+            <?php
+            bloginfo('name');
+            if (is_home()) {
+                echo '-' . get_bloginfo('description');
+            } else {
+                wp_title('|', true);
+            }
             ?>
         </title>
 
@@ -105,24 +105,8 @@
 
                 <a href="<?php echo home_url(); ?>" id="logo"><img  src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="Zeni"></a>
 
-                <nav>
-                    <ul id="nav" class="sf-menu">
-                        <li class="current-menu-item"><a href="index.html">HOME</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="page.html">ABOUT</a>
-                            <ul>
-                                <li><a href="#">Submenu</a></li>
-                                <li><a href="#">Submenu</a></li>
-                                <li><a href="#">Submenu</a></li>
+                <?php get_template_part('partials/menu', 'topo') ?>
 
-                            </ul>
-                        </li>
-                        <li><a href="portfolio.html">WORK</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                        <li><a href="http://www.mojo-themes.com/item/zeni-wordpress-theme/?r=ansimuz">WORDPRESS VERSION</a></li>
-                    </ul>
-                    <div id="combo-holder"></div>
-                </nav>
             </div>
         </header>
 
