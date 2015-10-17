@@ -12,6 +12,8 @@ footer, header, nav, section, audio, video {
 	display: block;
 }
 
+#author-avatar{overflow: hidden; border: 1px dashed #CCC; padding: 5px; margin-bottom: 10px;}
+#author-avatar img{float: left; margin-right: 5px;}
 .clearfix{ clear:both; }
 
 .clearfix:after {
